@@ -1,0 +1,254 @@
+/* Global styles for dark background */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Loader styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Customize the loader animation */
+@keyframes typingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader__letter {
+  opacity: 0;
+  animation: typingAnimation 0.5s ease-in-out forwards;
+}
+
+/* Stagger the animation delay for each letter */
+.loader__letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader__letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader__letter:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader__letter:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader__letter:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.loader__letter:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.loader__letter:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+/* Cinematic animation on homepage */
+.home {
+  padding: 100px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+  opacity: 0;
+}
+
+/* Customize the fadeInUp animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+/* ... (existing CSS styles) */
+
+/* Loader styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ... (existing CSS styles) */
+
+/* Customize the loader animation */
+@keyframes typingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader__letter {
+  opacity: 0;
+  animation: typingAnimation 0.5s ease-in-out forwards;
+}
+
+/* Stagger the animation delay for each letter */
+.loader__letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+/* ... (existing CSS styles) */
+
+/* Fade out loader word "My" */
+@keyframes fadeOutLoaderWord {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader__word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeOutLoaderWord 1s ease-in-out 2s forwards; /* Delay the fade-out animation */
+}
+
+/* ... (existing CSS styles) */
+
+
+/* ... (existing CSS styles) */
+
+/* Customize the loader animation */
+@keyframes typingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader__letter {
+  opacity: 0;
+  animation: typingAnimation 0.5s ease-in-out forwards;
+}
+
+/* Stagger the animation delay for each letter */
+.loader__letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+/* ... (existing CSS styles) */
+
+/* Fade out loader word "My" with erase effect */
+@keyframes fadeOutLoaderWord {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader__word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeOutLoaderWord 1s ease-in-out 2s forwards; /* Delay the fade-out animation */
+}
+
+/* ... (existing CSS styles) */
+
